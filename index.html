@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time OP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="preloder">
+
+    </div>
+    <div class="container">
+    <img src="https://source.unsplash.com/random/?tech,nature,sea,city,space,moon,sky/1080x2048" alt="" type="button" value="Reload Page" onClick="document.location.reload(true)">
+    <h1 id="current_time"></h1>
+</div>
+
+
+
+
+<script>
+    let time=document.getElementById("current_time");
+
+    setInterval(()=>{
+        let d=new Date();
+    time.innerHTML = d.toLocaleTimeString();
+    },1000)
+
+    let d=new Date();
+    time.innerHTML = d.toLocaleTimeString();
+
+</script>
+<script>
+    var loder = document.getElementById("preloder");
+
+    window.addEventListener("load", function(){
+        loder.style.display = "none";
+    })
+</script>
+</body>
+</html>
