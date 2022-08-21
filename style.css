@@ -31,6 +31,10 @@
     letter-spacing: 10px;
     text-shadow: 0 0 5px #ffffff;
 }
+.container:hover{
+    cursor: pointer;
+    
+}
 
 img{
     /* Set rules to fill background */
